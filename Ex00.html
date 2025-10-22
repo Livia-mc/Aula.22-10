@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM - Continuação</title>
+    <script type="text/javascript" src="js/ex00.js"></script>
+    <link rel="stylesheet" href="css/ex00.css">
 </head>
 <body>
-    
+    <h1 id="titulo">DOM</h1>
+    <h2>Métodos DOM</h2>
+    <p>Os métodos permitem manipular elementos do documento HTML com JS</p>
+
+    <ol>
+        <li>document.getElementById("nome_do_id") - pega o elemento do HTML via Id;</li><br>
+        <li>innerHTML - inserir/aleterar conteudo; <input type="button" value="Mudar título" onclick="mudartitulo()"></li><br>
+        <li>mudar estilo - alteração de css  via js; <input type="button" value="Mudar Estilo" onclick="mudarestilo()"></li><br>
+        <li>classList - insere uma class no elemento em questão</li><br>
+            <ul>
+                <li>.add - adiciona uma class no elemento; <input type="button" value="Destacar" onclick="destacar()"></li><br>
+            </ul>
+    </ol>
+
+
 </body>
 </html>
