@@ -25,3 +25,43 @@ function destacar(){
     titulo = document.getElementById("titulo")
     titulo.classList.add("destacado")
 }
+
+/*Exemplo 05 - remover */
+function remover(){
+    var titulo
+    titulo = document.getElementById("titulo")
+    titulo.classList.remove("destacado")
+}
+
+/*Exemplo 06 - alternar */
+function alternar(){
+    var titulo
+    titulo = document.getElementById("titulo")
+    titulo.classList.toggle("destacado")
+}
+
+
+/*Exemplo 07 - criar */
+function adicionartexto(){
+    var novo, div
+
+    novo = document.createElement("p")
+    novo.id="paragrafo"
+    novo.innerText="Novo parágrafo criado com JS"
+
+    div=document.getElementById("container")
+    div.appendChild(novo)
+}
+
+/*Exemplo 08 - remover */
+function removertexto(){
+    var p
+
+    p=document.getElementById("paragrafo")
+    if(p){
+        p.remove()
+    }
+    else{
+        alert("Não há texto para remover")
+    }
+}

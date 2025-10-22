@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/ex00.css">
 </head>
 <body>
+    
     <h1 id="titulo">DOM</h1>
     <h2>Métodos DOM</h2>
     <p>Os métodos permitem manipular elementos do documento HTML com JS</p>
@@ -19,8 +20,14 @@
         <li>classList - insere uma class no elemento em questão</li><br>
             <ul>
                 <li>.add - adiciona uma class no elemento; <input type="button" value="Destacar" onclick="destacar()"></li><br>
+                <li>.remove - remove uma class no elemento; <input type="button" value="Remover Destaque" onclick="remover()"></li><br>
+                <li>.toggle - alterna entre remover e adicionar uma classe no elemento. <input type="button" value="Alternar" onclick="alternar()"></li><br>
             </ul>
+        <li>createElement - cria elemento html; <button onclick="adicionartexto()">Adicionar Texto </button></li><br>
+        <li>remove - remove elemento; <button onclick="removertexto()">Remover texto</button></li>
     </ol>
+
+    <div id="container"></div>
 
 
 </body>
